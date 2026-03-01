@@ -82,8 +82,14 @@ export PICO_SDK_PATH="$HOME/.embedded/pico-sdk"
 alias ipv4='curl -4 ifconfig.me && echo'
 alias ipv6='curl -6 ifconfig.me && echo'
 
+export WINEPREFIX='/home/onraj/Games/WinePrefix'
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-
+alias ls='lsd'
+alias l='lsd -l'
+alias la='lsd -a'
+alias lla='lsd -la'
+alias lt='lsd --tree'
