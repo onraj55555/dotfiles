@@ -1,4 +1,4 @@
-fortune | cowsay
+#source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -70,26 +70,11 @@ zstyle ':fzf-tab"complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 #zstyle ':completion:*:*:docker:*' option-stacking yes
 #zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
-# Aliases
-alias ls='ls --color'
-
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-export PICO_SDK_PATH="$HOME/.embedded/pico-sdk"
-
 alias ipv4='curl -4 ifconfig.me && echo'
 alias ipv6='curl -6 ifconfig.me && echo'
 
-export WINEPREFIX='/home/onraj/Games/WinePrefix'
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-alias ls='lsd'
-alias l='lsd -l'
-alias la='lsd -a'
-alias lla='lsd -la'
-alias lt='lsd --tree'
+source ./.post.sh
