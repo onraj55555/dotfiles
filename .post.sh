@@ -3,3 +3,5 @@ alias ll='lsd -l'
 alias la='lsd -a'
 alias lla='lsd -la'
 alias lt='lsd --tree'
+
+export PATH=$PATH:~/Software/odin

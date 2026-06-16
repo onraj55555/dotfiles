@@ -21,7 +21,7 @@ set $menu rofi -show drun
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
@@ -34,7 +34,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # Example configuration:
 #
 
-set $lock swaylock -f -i ~/Pictures/Wallpapers/huge_metal_fan.jpg
+set $lock swaylock --clock --indicator -f -i ~/Pictures/Wallpapers/huge_metal_fan.jpg
 
 exec swayidle -w \
          timeout 300 "$lock" \
