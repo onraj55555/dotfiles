@@ -78,3 +78,6 @@ alias ipv4='curl -4 ifconfig.me && echo'
 alias ipv6='curl -6 ifconfig.me && echo'
 
 source ./.post.sh
+
+export PATH=$PATH:/opt/odin
+export PATH="$PATH:/opt/zotero"
